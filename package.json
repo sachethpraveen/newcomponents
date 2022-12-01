@@ -1,7 +1,10 @@
 {
-  "name": "realcomponents",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@sachethpraveen/realcomponents",
+  "version": "0.1.1",
+  "repository": "git://github.com/sachethpraveen/newcomponents.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -20,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "release": "standard-version"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
   }
 }
